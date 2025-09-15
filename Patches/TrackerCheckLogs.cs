@@ -15,14 +15,15 @@ namespace ZeroDayToolKit.Patches
             foreach (FileEntry file in log.files)
             {
                 string data = file.data;
-                if (data.Contains(targetIP) && (!stricts.Contains(c) || (!data.Contains("Connection") && !data.Contains("Disconnected"))))
+                if (data.Contains(targetIP) &&
+                    stricts.Contains(c) &&
+                    (data.Contains("Connection") || data.Contains("Disconnected")))
                 {
-                    __result = true;
+                    __result = true; // tracker *should* fire
                     return false;
                 }
             }
-            __result = false;
-            return false; // skips redundant log check, will return true if i see mods that do postfixes
+            return true; // let hacknet do its vanilla logic
         }
 
         public static void Init()
