@@ -106,7 +106,7 @@ Once the `Retrace` period is over and everything is good, it is considered that 
 See [This Video](https://youtu.be/uQaObgut0p0) for a visual showcase of Trace V2 and other things this mod adds.
 
 ## File System
-- Images and (IF [STUXNET](https://github.com/AutumnRivers/StuxnetHN/releases/latest) IS INSTALLED) Audio files can be stored in a file now.
+- Images and (IF [STUXNET](https://git.gay/AutumnRivers/StuxnetHN/releases/latest) IS INSTALLED) Audio files can be stored in a file now.
   - To add an image located at `ExtensionName/Images/logo.png`: `<AddAsset FileName="logo.png" FileContents="#0DTK_IMAGE:Images/logo.png#" TargetComp="playerComp" TargetFolderpath="home" />`;
   - To add it as an IRC chat: `<AddIRCMessage Author="author" TargetComp="comp" Delay="0.0">!ATTACHMENT:image#%#logo.png#%#Images/logo.png</AddIRCMessage>`
   - Images will be visible upon click/`cat` and also in the IRC when it is posted.

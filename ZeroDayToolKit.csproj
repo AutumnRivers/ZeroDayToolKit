@@ -66,7 +66,7 @@
       <HintPath>bin\Debug\PathfinderAPI.dll</HintPath>
     </Reference>
     <Reference Include="Stuxnet_HN">
-      <HintPath>libs\Stuxnet_HN.dll</HintPath>
+      <HintPath>libs\StuxnetHN.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
